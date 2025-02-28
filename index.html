@@ -1,11 +1,36 @@
-<html>
+<html lang="fi">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css" />
-    <title>jotain</title>
+    <title data-i18n="title"></title>
   </head>
   <body>
-    <div class="container">
-      <h1>otsikko</h1>
+    <header>
+      <h1 data-i18n="h1"></h1>
+      <nav aria-label="language">
+        <ul>
+          <li id="en"><a href="index.html"
+              onclick="changeLanguage('en')">English</a></li>
+          <li id="fi"><a href="index.html"
+              onclick="changeLanguage('fi')">Suomi</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="container">
+        <img
+          src="images/462770781_10160783813021872_6379373078989118277_n.jpg" />
+        <div class="textWrapper" data-i18n="who_am_i">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="textWrapper" data-i18n="what_i_do">
+        </div>
+      </div>
     </div>
+    <footer><a href="#">jotain</a></footer>
+    <script src="script.js"></script>
   </body>
 </html>
